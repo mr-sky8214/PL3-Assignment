@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Feedback Form</title>
+    <style>
+      h1 {
+        font-family: "Lucida Console";
+        text-align: center;
+        font-size: 40px;
+      }
+      body {
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+      form {
+        border: 2px solid red;
+        border-radius: 20px;
+        font-size: 20px;
+        font-family: sans-serif;
+        padding: 5px;
+        color: #1d2d50;
+      }
+      textarea {
+        height: 70px;
+        width: 700px;
+        border: 2px solid blueviolet;
+        font-size: 20px;
+        font-family: sans-serif;
+      }
+      button {
+        border: 3px solid blueviolet;
+        width: 40%;
+        border-radius: 20px;
+        height: 25px;
+        margin-left: 7%;
+      }
+
+      input[type="text"] {
+        font-size: 15px;
+        font-weight: bold;
+        padding-left: 4px;
+        border: 2px solid blueviolet;
+        width: 80%;
+        height: 30px;
+        border-radius: 20px;
+        /* margin-left: 15%; */
+      }
+
+      input[type="number"],
+      input[type="date"],
+      input[type="tel"],
+      input[type="email"] {
+        font-size: 15px;
+        font-weight: bold;
+        padding-left: 4px;
+        border: 2px solid blueviolet;
+        height: 30px;
+        border-radius: 20px;
+      }
+
+      .sform {
+        width: 75%;
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 align="center">Student Feedback On Hostel Facilities</h1>
+    </header>
+    <hr />
+    <div class="container">
+      <form action="../Practical5a/index.html" method="POST">
+        <lable for="StuInfo">Personal Details</lable>
+        <br />
+        <hr />
+
+        Student Name:
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          required
+        /><br /><br />
+
+        Hostel Block :
+        <input type="radio" name="HostelBlock" value="h5" checked />
+        <label for="h5">H5</label>
+        <input type="radio" name="HostelBlock" value="h6" />
+        <label for="h6">H6</label>
+        <input type="radio" name="HostelBlock" value="h7" />
+        <label for="h7">H7</label>
+        <input type="radio" name="HostelBlock" value="h8" />
+        <label for="h8">H8</label>
+        <br /><br />
+
+        Room Number:
+        <input type="number" placeholder="Room Number" value="0" required />
+        <br /><br />
+
+        Permanat Address:
+        <input
+          type="text"
+          placeholder="Enter address"
+          name="address"
+          required
+        />
+        <br /><br />
+
+        Branch:
+        <input type="radio" name="Branch" value="cse" checked />
+        <label for="cse">CSE</label>
+        <input type="radio" name="Branch" value="it" />
+        <label for="it">IT</label>
+        <input type="radio" name="Branch" value="mech" />
+        <label for="mech">MECH</label>
+        <input type="radio" name="Branch" value="civil" />
+        <label for="civil">CIVIL</label>
+        <input type="radio" name="Branch" value="Electrical" />
+        <label for="Electrical">Electrical</label>
+        <input type="radio" name="Branch" value="Electronics" />
+        <label for="Electronics">Electronics</label>
+        <br /><br />
+
+        Year:
+        <input type="radio" name="Year" value="fy" checked />
+        <label for="fy">FY</label>
+        <input type="radio" name="Year" value="sy" />
+        <label for="sy">SY</label>
+        <input type="radio" name="Year" value="ty" />
+        <label for="ty">TY</label>
+        <input type="radio" name="Year" value="ly" />
+        <label for="ly">LAST YEAR</label>
+        <br />
+        <br />
+
+        Admission Date:
+        <input type="date" name="addDate" required />
+        <br /><br />
+
+        Admission receipt:
+        <input type="file" name="receipt" accept="application/pdf" required />
+        <br /><br />
+
+        Email:
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <br /><br />
+
+        Contact Number:
+        <input
+          type="tel"
+          name="cno"
+          placeholder="Enter 10 digit contact number"
+          required
+        />
+        <br /><br />
+        <hr />
+        Hostel Facilities:
+        <br />
+        <hr />
+        Cleanliness:
+        <input type="checkbox" name="Best" value="Best" checked />
+        <label for="Best"> Best</label>
+        <input type="checkbox" name="Average" value="Average" />
+        <label for="Average"> Average</label>
+        <input type="checkbox" name="Worst" value="Worst" />
+        <label for="Worst"> Worst</label>
+        <br /><br />
+
+        Quality of Food:
+        <input type="checkbox" name="Best" value="Best" checked />
+        <label for="Best"> Best</label>
+        <input type="checkbox" name="Average" value="Average" />
+        <label for="Average"> Average</label>
+        <input type="checkbox" name="Worst" value="Worst" />
+        <label for="Worst"> Worst</label>
+        <br /><br />
+
+        Water Facility:
+        <input type="checkbox" name="Best" value="Best" checked />
+        <label for="Best"> Best</label>
+        <input type="checkbox" name="Average" value="Average" />
+        <label for="Average"> Average</label>
+        <input type="checkbox" name="Worst" value="Worst" />
+        <label for="Worst"> Worst</label>
+        <br /><br />
+
+        <label for="feedback">Feedback</label><br />
+        <textarea rows="4" name="feedback"></textarea>
+        <br /><br />
+
+        <button
+          type="submit"
+          name="submit"
+          value="submit"
+          onclick="alert('Successfully Sumitted')"
+        >
+          Submit
+        </button>
+
+        <button
+          type="reset"
+          name="reset"
+          value="reset"
+          onclick="alert('Successfully Reset')"
+        >
+          Reset
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
