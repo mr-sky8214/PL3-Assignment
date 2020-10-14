@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MPSC REGISTRATION</title>
+  </head>
+  <body>
+    <header align="center">
+      <h1>MPSC REGISTRATION FORM</h1>
+    </header>
+    <hr />
+
+    <form
+      method="GET"
+      action="../Practical5a/index.html"
+      style="font-size: large"
+    >
+      <fieldset>
+        <legend><b>MPSC REGISTRATION for 2021</b></legend>
+      </fieldset>
+      <fieldset>
+        <legend>Student Information</legend>
+        <label for="fsnm">First Name: </label>
+        <input
+          type="text"
+          name="fsnm"
+          placeholder="Enter first name"
+          required
+        /><br />
+        <label for="msnm">Middle Name: </label>
+        <input type="text" name="msnm" placeholder="Enter middle name" /> <br />
+        <label for="lsnm">Last Name: </label>
+        <input
+          type="text"
+          name="lsnm"
+          placeholder="Enter last name"
+          required
+        /><br />
+        <label for="pnm">Parent's Name: </label>
+        <input
+          type="text"
+          name="pnm"
+          placeholder="Enter Parent's name"
+          required
+        /><br />
+        <label for="mno">Mobile Number: </label>
+        <input
+          type="tel"
+          name="mno"
+          placeholder="Enter phone number"
+          required
+        /><br />
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter Email"
+          required
+        /><br />
+        <label for="add">Address: </label><br />
+        <textarea cols="80" rows="5" required></textarea><br />
+        <label for="id">ID Proof: </label>
+        <select name="id" required>
+          <option value="aadhar" selected>Aadhar card</option>
+          <option value="pan">Pan card</option>
+          <option value="voter id">Voter ID</option>
+          <option value="Driving licence">Driving licence</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Educational Information</legend>
+        <label for="quali">Qualification Degree: </label>
+        <select name="quali" size="2" required multiple>
+          <option value="btech">BTech</option>
+          <option value="mtech">MTech</option>
+          <option value="bsc id">BSC</option>
+          <option value="ba">BA</option></select
+        ><br />
+
+        <label for="branch">Branch: </label>
+        <select name="branch" required>
+          <option value="CSE">CSE</option>
+          <option value="IT">IT</option>
+          <option value="mech">MECHANICAL</option>
+          <option value="civil">CIVIL</option>
+          <option value="electronics">electronics</option>
+          <option value="electricals">electricals</option></select
+        ><br />
+
+        <label for="Uni">Choose your University from list:</label>
+        <input list="uni" name="uni" required />
+        <datalist id="uni">
+          <option value="Shivaji University"></option>
+          <option value="Pune University"></option>
+          <option value="Mumbai University"></option>
+          <option value="Batu"></option></datalist
+        ><br />
+
+        <label for="clg">Choose your College from list:</label>
+        <input list="clg" name="clg" required />
+        <datalist id="clg">
+          <option value="WCE"></option>
+          <option value="KIT"></option>
+          <option value="COEP"></option>
+          <option value="RIT"></option></datalist
+        ><br />
+
+        <label for="enm">Enter exam seat Number: </label>
+        <input
+          type="number"
+          name="enm"
+          placeholder="exam seat number"
+          required
+        />
+      </fieldset>
+      <fieldset>
+        <legend>Exam Preferences:</legend>
+        <label for="branches">Select branches</label>
+        <select name="branches" size="5" required multiple>
+          <option value="State Service Exam 2020 ">
+            State Service Exam 2020
+          </option>
+          <option value="Civil Judge and Judicial Magistrate Exam 2020">
+            Civil Judge and Judicial Magistrate Exam 2020
+          </option>
+          <option value="Assistant Motor Vehicle Inspector Exam 2020">
+            Assistant Motor Vehicle Inspector Exam 2020
+          </option>
+          <option value="Assistant Section Officer Exam 2020">
+            Assistant Section Officer Exam 2020
+          </option>
+          <option value="Maharashtra Subordinate Services Combined Exam 2020">
+            Maharashtra Subordinate Services Combined Exam 2020
+          </option>
+          <option value="Police Sub Inspector Exam 2020">
+            Police Sub Inspector Exam 2020
+          </option>
+          <option value="Maharashtra Group-C Services Combined Exam 2020">
+            Maharashtra Group-C Services Combined Exam 2020
+          </option>
+          <option value="Maharashtra Agriculture Services Examination 2020">
+            Maharashtra Agriculture Services Examination 2020
+          </option>
+          <option
+            value="
+          State Tax Inspector Exam 2020"
+          >
+            State Tax Inspector Exam 2020
+          </option>
+        </select>
+        <br />
+
+        <label for="City">Enter centers for exam: </label>
+        <select name="city">
+          <optgroup label="pune">
+            <option value="pune">pune</option>
+            <option value="Kolhapur">Kolhapur</option>
+            <option value="Ahmednagar">Ahmednagar</option>
+            <option value="Sangli">Sangli</option>
+          </optgroup>
+          <optgroup label="Mumbai">
+            <option value="Mumbai (central)">Mumbai (central)</option>
+            <option value="	Mumbai (West)">Mumbai (West)</option>
+            <option value="	Navi Mumbai">Navi Mumbai</option>
+            <option value="	Palghar">Palghar</option>
+          </optgroup>
+        </select>
+      </fieldset>
+      <hr />
+      <button type="submit" onclick="alert('Successfully Submitted')">
+        Submit
+      </button>
+      <button type="reset" onclick="alert('Reseted')">Reset</button>
+    </form>
+  </body>
+</html>
