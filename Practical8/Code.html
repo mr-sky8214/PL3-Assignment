@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Code Snippet</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+      h2,
+      h3,
+      h4,
+      section {
+        padding-left: 15%;
+        padding-right: 15%;
+      }
+      code,
+      pre {
+        margin-left: 15%;
+      }
+      p{
+          padding-left: 20%;
+          text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <header style="text-align: center">
+      <h1>Welcome to Coding Club..</h1>
+    </header>
+    <hr />
+    <h2>Find the sum of the series 1+11+111+1111+... upto n terms</h2>
+    <section>
+      <h3 style="text-align: left">C++ code for given problem statement</h3>
+      <code>
+        <pre style="border: 2px solid">
+            // C++ program to find the sum of 
+            // the series 1+11+111+1111+.... 
+            #include <bits/stdc++.h> 
+            using namespace std; 
+              
+            // Function for finding summation 
+            int summation(int n) 
+            { 
+                <var>int sum = 0, j = 1, i;</var> 
+                for (i = 1; i <= n; i++) { 
+                    sum = sum + j; 
+              
+                    // Appending a 1 at the end 
+                    j = (j * 10) + 1; 
+                } 
+              
+                return sum; 
+            } 
+              
+            // Driver Code 
+            int main() 
+            { 
+                <var>int n = 5;</var>
+                cout << " " <<  summation(n); 
+                return 0; 
+            } 
+        </pre>
+      </code>
+    </section>
+    <section>
+      <h3>Sample Inputs and Outputs...</h3>
+      <samp>
+        <pre>
+            Input : 3    
+            Output : 1 + 11 + 111 +....
+            Total sum is : 123
+
+        </pre>
+      </samp>
+
+      <samp>
+        <pre>
+            Input : 4
+            Output : 1 + 11 + 111 + 1111 +..... 
+            Total sum is : 1234
+
+        </pre>
+      </samp>
+
+      <samp>
+        <pre>
+            Input : 7
+            Output : 1 + 11 + 111 + 1111 + 11111 + 111111 + 1111111 +..... 
+            Total sum is : 1234567
+
+        </pre>
+      </samp>
+    </section>
+    <section>
+        <h3>Complexity</h3>
+        <p>The above program iterates<s> n<sup>2</sup></s></sup> <strong> n</strong> times</p>
+        <p>So time complexity is <strong>O(n)</strong></p>
+    </section>
+    <hr>
+    <footer>
+        <p>For more information 
+        <a href="https://www.geeksforgeeks.org/find-sum-series-1111111111-upto-n-terms/">Click here</a></p>
+        <p>Or visit <a href="https://www.geeksforgeeks.org/">GFG</a></p>
+        <form action="#">
+          <label for="Feed">Enter your Valuble feedback</label><br />
+          <textarea rows="5" cols="50" placeholder="Feedback"></textarea><br />
+          <button type="submit">Click to submit</button>
+        </form>
+    </footer>
+  </body>
+</html>

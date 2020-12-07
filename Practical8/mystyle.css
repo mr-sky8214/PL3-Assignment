@@ -1,0 +1,25 @@
+body {
+  background-color: #a3bcb6;
+}
+
+h1 {
+  background-color: #12232e;
+  color: white;
+  font-family: Helvetica;
+}
+
+p {
+  font-family: Verdana;
+  font-size: medium;
+}
+
+article,
+section {
+  border: 2px solid red;
+  border-radius: 2%;
+}
+
+footer {
+  background-image: url("https://images.alphacoders.com/676/676708.jpg");
+  background-size: cover;
+}
