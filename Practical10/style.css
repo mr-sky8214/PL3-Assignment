@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+h1 {
+  position: absolute;
+  padding: 3px;
+  float: left;
+  margin-left: 2px;
+  margin-top: 10px;
+  color: aliceblue;
+}
+
+ul {
+  width: auto;
+  float: right;
+  list-style: none;
+  margin-top: 8px;
+}
+
+li {
+  display: inline-block;
+  padding: 15px 30px;
+}
+
+a {
+  text-align: center;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.main {
+  width: 100%;
+  display: inline-block;
+}
+.main img {
+  width: 550px;
+  height: 550px;
+  float: right;
+}
+
+.main .wrapper {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Poppins", sans-serif;
+}
+
+.main .wrapper h2 {
+  padding: 0;
+  margin: 0;
+  color: #26a0da;
+  text-shadow: 10px 10px rgba(#000, #000, #000, 0.5);
+  font-size: 35px;
+}
+
+.main .wrapper p {
+  color: #20002c;
+  font-size: 18px;
+  margin: 0;
+  line-height: 35px;
+}
+
+.main .wrapper a {
+  background-color: crimson;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.main .wrapper span:before {
+  content: "";
+  animation: animate infinite 8s;
+}
+
+@keyframes animate {
+  0% {
+    content: "Coder";
+  }
+  50% {
+    content: "Web Designer";
+  }
+  100% {
+    content: "Mobile Photoghraper";
+  }
+}
